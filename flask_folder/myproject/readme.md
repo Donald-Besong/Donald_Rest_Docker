@@ -27,10 +27,9 @@ project_description
 
 <ol>
 <li> Clone the repository </li>
-<li> Make sure you are in the root directory, that contains app.py </li>
-<li> Create and activate environment: <i>make -f makefile.mak make_env </i></li>
-<li> Install modules using pip <i>make -f makefile.mak make_env2 </i> </li>
-<li> export FLASK_APP=app.py && export FLASK_DEBUG=1 && export FLASK_ENV=development </li>
-<li> On your browser load <i>127.0.0.1:5000</i> </li>
+<li> Make sure you are in the root directory, that contains docker-compose.yml </li>
+<li> Build image: <i>docker-compose build </i></li>
+<li> run the image as a container <i>docker run  --name my_flask_container --rm -h 0.0.0.0 -p 5002:5001 flask_image </i> </li>
+<li> On your browser load <i>http://localhost:5002/items</i> </li>
 
 </ol>

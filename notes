@@ -92,7 +92,7 @@ apk, not apt
 /bin/sh, not /bin/bash
 
 #running flask app from docker
-docker run  --name my_flask_container --rm -h 0.0.0.0 -p 5001:5001 flask_image
+docker run  --name my_flask_container --rm -h 0.0.0.0 -p 5002:5001 flask_image
 docker run  -ti --name my_flask_container -v $(pwd)/flask_shared:/app --rm flask_image bash
 
 
