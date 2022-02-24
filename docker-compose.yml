@@ -1,0 +1,15 @@
+version: '3'
+services:
+  flask_service: 
+    container_name: flask_container
+    image: flask_image
+    command: tail -f /dev/null
+    volumes: 
+      - "./flask_shared:/usr/myproject/"
+    build:
+      context: flask_folder
+    
+
+
+      
+
